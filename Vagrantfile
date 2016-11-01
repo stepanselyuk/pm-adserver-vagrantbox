@@ -49,7 +49,7 @@ Vagrant.configure(2) do |config|
   config.vm.network :private_network, type: "dhcp"
   # config.vm.network :private_network, ip: "10.0.2.21"
   # config.vm.network :public_network, ip: "192.168.11.150", bridge: 'en0: Wi-Fi (AirPort)'
-  config.vm.network :public_network, ip: "192.168.11.234", bridge: 'en0: Wi-Fi (AirPort)'
+  # config.vm.network :public_network, ip: "192.168.11.234", bridge: 'en0: Wi-Fi (AirPort)'
 
   # @see https://docs.vagrantup.com/v2/networking/forwarded_ports.html
 

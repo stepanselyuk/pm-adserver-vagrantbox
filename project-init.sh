@@ -34,8 +34,7 @@ composer config github-oauth.github.com $GITHUB_TOKEN
 php bin/composer config github-oauth.github.com $GITHUB_TOKEN
 
 # init/reinit/install project
-# ant helper-after-merge
-# ant download-geoip
+ant helper-after-merge
 
 chmod -R 755 ./var/cache ./var/logs ./var/sessions
 

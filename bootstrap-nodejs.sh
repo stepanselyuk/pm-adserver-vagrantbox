@@ -7,7 +7,7 @@ NODEJS_VERSION='v6.9.1'
 
 wget -q https://nodejs.org/dist/${NODEJS_VERSION}/node-${NODEJS_VERSION}.tar.gz
 tar zxf node-${NODEJS_VERSION}.tar.gz
-cd node-${NODEJS_VERSION}.tar.gz
+cd node-${NODEJS_VERSION}
 
 ./configure
 make

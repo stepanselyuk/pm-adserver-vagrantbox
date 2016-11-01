@@ -34,12 +34,12 @@ composer config github-oauth.github.com $GITHUB_TOKEN
 php bin/composer config github-oauth.github.com $GITHUB_TOKEN
 
 # init/reinit/install project
-ant helper-after-merge
+# ant helper-after-merge
 # ant download-geoip
 
 chmod -R 755 ./var/cache ./var/logs ./var/sessions
 
-php app/check.php
+php bin/symfony_requirements
 
 # create convenient symbolic link in home directory
 rm -f ~/adserver

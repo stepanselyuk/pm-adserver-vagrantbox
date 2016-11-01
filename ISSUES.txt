@@ -1,0 +1,27 @@
+ISSUE:  [ bash: line 3: /etc/init.d/vboxadd: No such file or directory ] [or other issue]
+
+If you have such issue with VirtualBox additions, please see https://github.com/dotless-de/vagrant-vbguest/issues/170
+
+$ vagrant ssh
+$ sudo yum update
+$ sudo yum install kernel-headers kernel-devel
+
+then reboot ($ exit and $ vagrant reload).
+
+If the issue is not resolved:
+
+$ vagrant ssh
+$ sudo /opt/VBoxGuestAdditions-5*/init/vboxadd setup
+
+After install you need to reload the virtual machine (vagrant reload).
+
+ISSUE: [ -bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory ]
+
+$ sudo nano /etc/environment
+
+add these lines:
+
+LANG=en_US.utf-8
+LC_ALL=en_US.utf-8
+
+and save file (CTRL+O, CTRL+X)

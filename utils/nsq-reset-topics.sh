@@ -10,6 +10,9 @@ function reset_topic {
 # topic for delayed messages
 reset_topic __socloz_delayed default
 
+# for impressions
+reset_topic impressions default
+
 # remove old logs
 sudo bash << EOF
 
